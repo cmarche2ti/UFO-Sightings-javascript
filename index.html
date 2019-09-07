@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>UFO Sightings</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/style.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="index.html">UFO Sightings
+                <img class="nav-ufo" src="static/images/ufo.svg">
+              </a>
+            </div>
+          </div>
+      </nav>
+      
+      <div class="hero text-center">
+        <h1>UFO Sightings</h1>
+        <p>Use the form below to search for evidence of UFO sightings. </p>
+      </div>
+      <div class="container">
+        
+          
+        <form id='ufo-form'>
+          <div class='form row'>
+            
+              <div class="form-group col-md-6">
+                <label for="search-form">Enter Date (mm/dd/yyyy)</label>
+                <input class="form-control" id="form-input-date" name="search-form" type="text" placeholder="1/1/2010">
+                <small id="dateHelp" class="form-text text-muted">If no date or state is selected all reports will be displayed.</small>
+              </div>
+              <div class='form-group col-md-6'>  
+                <label for="search-form">Enter State (abbreviation)</label>
+                <input class="form-control" id="form-input-state" name="search-form" type="text" placeholder="ca">
+              </div>  
+            
+          </div>
+          <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+        </form>
+                 
+        <div class="row">
+          <div class="col-md-12">
+            <h3 id='searchResults'>Event Search Results</h3>
+            <table id="ufo-table" class="table table-striped">
+              <thead>
+                <tr>
+                  <td class = 'table-head'>date/time</td>
+                  <td class = 'table-head'>city</td>
+                  <td class = 'table-head'>state</td>
+                  <td class = 'table-head'>country</td>
+                  <td class = 'table-head'>shape</td>
+                  <td class = 'table-head'>duration(mins)</td>
+                  <td class = 'table-head'>comment</td>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <footer class="footer">
+      <span class="bottom">UFO Sightings</span>
+    </footer>     -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="static/js/data.js"></script>
+    <script src="static/js/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
